@@ -12,7 +12,7 @@ class WorkDiary(models.Model):
     
 
 class ScreenShot(models.Model):
-    work_diary = models.ForeignKey(WorkDiary, on_delete=models.CASCADE, related_name='screenshots')
+    work_diary = models.ForeignKey(WorkDiary, on_delete=models.CASCADE, related_name='screenshots', null=True)
     
     image = models.ImageField(upload_to=get_image_path)
     description = models.TextField()

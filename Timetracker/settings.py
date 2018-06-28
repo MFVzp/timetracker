@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     
+    'rest_framework',
+    
     'work_diary',
 ]
 
@@ -132,3 +134,8 @@ MEDIA_ROOT = 'media/'
 
 # Image storage
 IMAGE_STORAGE_FOLDER = 'images'
+
+
+# Django REST settings
+DATETIME_FORMAT = '%M-%H-%d-%m-%Y'
+DATETIME_INPUT_FORMATS = ['%M-%H-%d-%m-%Y', ]
