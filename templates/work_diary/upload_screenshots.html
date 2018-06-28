@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block title %}Work diary{% endblock %}
+{% block content %}
+<form class="m-5" method="post" enctype="multipart/form-data">{% csrf_token %}
+    <input class="m-3" type="file" name="image"><br>
+    <input class="m-3" type="text" name="description"><br>
+    <input class="btn btn-success m-3" type="submit" value="Upload" name="action">
+</form>
+{% endblock %}
